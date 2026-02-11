@@ -137,3 +137,30 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# AI
+docs/chat-context.md
+
+# Extracted/generated control data
+data/controls/controls/
+data/controls/controls-index.json
+data/controls/catalog-metadata.json
+data/controls/assignments.csv
+
+# Published web data (generated from data/controls)
+apps/web/public/api/controls/
+
+# Optional: downloaded source files
+data/source/annex-3a.pdf
+data/source/annex-3a.pdf.sha256
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
