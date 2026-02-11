@@ -10,6 +10,8 @@ This repository is not affiliated or endorsed by the Government of Canada.
 
 It merely exists as a convenience browsing tool.
 
+This tool contains code that was generated using OpenAI's GPT-5.2 and GPT-5.3 models.
+
 ## Current scope
 
 - Browse controls and enhancements from extracted catalog data
