@@ -37,6 +37,22 @@ h3 {
   margin: 0 0 0.5rem 0;
 }
 
+.title-home-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.title-home-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.title-home-link:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
 p {
   margin: 0;
   line-height: 1.6;
