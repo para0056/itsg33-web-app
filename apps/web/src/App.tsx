@@ -724,6 +724,18 @@ export default function App() {
     () => formatCatalogRevision(catalogMetadata),
     [catalogMetadata],
   );
+  const homePath = typeof window === "undefined" ? "/" : window.location.pathname;
+  const handleGoHome = useCallback(() => {
+    if (typeof window !== "undefined") {
+      window.history.pushState({}, "", window.location.pathname);
+    }
+    setQuery("");
+    setSelectedId(null);
+    setControl(null);
+    setControlState("idle");
+    setControlError(null);
+    setPendingEnhancementId(null);
+  }, []);
 
   return (
     <div className="page">
@@ -731,7 +743,18 @@ export default function App() {
         <div>
           <p className="eyebrow">ITSG-33</p>
           {revisionSummary && <p className="catalog-revision muted">{revisionSummary}</p>}
-          <h1>Controls Browser</h1>
+          <h1>
+            <a
+              className="title-home-link"
+              href={homePath}
+              onClick={(event) => {
+                event.preventDefault();
+                handleGoHome();
+              }}
+            >
+              Controls Browser
+            </a>
+          </h1>
           <p className="subhead">
             Search by ID, name, aliases, or keywords, and browse control details.
           </p>
