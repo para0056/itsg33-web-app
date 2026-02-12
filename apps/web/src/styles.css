@@ -547,16 +547,181 @@ p {
 }
 
 @media (max-width: 900px) {
+  .page {
+    padding: 1.5rem 1rem 3rem;
+    gap: 1rem;
+  }
+
+  .hero {
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .hero > div {
+    width: 100%;
+  }
+
   .layout {
     grid-template-columns: 1fr;
+    gap: 1rem;
   }
 
   .list {
-    max-height: none;
+    max-height: 38vh;
+    padding: 1rem;
+  }
+
+  .detail {
+    min-height: 0;
+  }
+
+  .control-card {
+    padding: 1.25rem;
+    gap: 1.1rem;
+  }
+
+  .control-title {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .control-title-actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .enhancement-card {
+    padding: 0.9rem 1rem;
+  }
+
+  .enhancement-header {
+    flex-direction: column;
+    align-items: flex-start;
+   }
+
+  .assignment-popover {
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(30rem, 92vw);
+  }
+
+  .page-meta {
+    text-align: left;
+    margin-top: 0;
   }
 
   .stats {
     width: 100%;
     justify-content: space-between;
+    padding: 0.85rem 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding: 1.1rem 0.8rem 2.4rem;
+  }
+
+  h1 {
+    font-size: 1.65rem;
+    line-height: 1.15;
+  }
+
+  h2 {
+    font-size: 1.22rem;
+  }
+
+  .eyebrow {
+    font-size: 0.68rem;
+    letter-spacing: 0.14em;
+  }
+
+  .hero-links a,
+  .footer-links a {
+    font-size: 0.85rem;
+  }
+
+  .panel {
+    padding: 1rem;
+    border-radius: 14px;
+  }
+
+  .search-panel input {
+    font-size: 16px;
+  }
+
+  .search-clear {
+    width: 1.6rem;
+    height: 1.6rem;
+    font-size: 0.82rem;
+  }
+
+  .search-hints {
+    gap: 0.35rem;
+  }
+
+  .search-hint {
+    padding: 0.24rem 0.5rem;
+    font-size: 0.78rem;
+  }
+
+  .stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.45rem 0.75rem;
+  }
+
+  .stats .label {
+    font-size: 0.64rem;
+  }
+
+  .list {
+    max-height: 34vh;
+    border-radius: 14px;
+  }
+
+  .list .control-select {
+    padding: 0.7rem;
+  }
+
+  .list .name {
+    font-size: 0.88rem;
+  }
+
+  .control-card {
+    padding: 1rem;
+    border-radius: 14px;
+  }
+
+  .copy-link-btn,
+  .jump-enhancements,
+  .related-link,
+  .back-to-top {
+    min-height: 2.2rem;
+  }
+
+  .copy-link-btn,
+  .jump-enhancements {
+    padding: 0.35rem 0.65rem;
+  }
+
+  .assignment-popover {
+    font-size: 0.82rem;
+    line-height: 1.35;
+    padding: 0.65rem 0.75rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .page {
+    padding-inline: 0.6rem;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .control-title-actions {
+    gap: 0.4rem;
   }
 }
