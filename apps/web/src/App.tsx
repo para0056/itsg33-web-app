@@ -1001,7 +1001,7 @@ export default function App() {
 
       <footer id="disclaimer" className="panel site-footer">
         <p>
-          <strong>Independent project.</strong> This interface is not affiliated with or endorsed by
+          <strong>Independent project.</strong> This website is not affiliated with or endorsed by
           CCCS, CSE, TBS, or the Government of Canada.
         </p>
         <p>
